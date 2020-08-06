@@ -1,0 +1,28 @@
+{
+  "name": "nlw",
+  "version": "1.0.0",
+  "description": "Projeto sobre a semana #2 da Next Level Week, voltado pra uma plataforma online para alunos e professores, chamada Proffy.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "nodemon src/server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/IgorCastromann/NextLevelWeek2-Proffy.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/IgorCastromann/NextLevelWeek2-Proffy/issues"
+  },
+  "homepage": "https://github.com/IgorCastromann/NextLevelWeek2-Proffy#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "nunjucks": "^3.2.2"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.4"
+  }
+}
