@@ -6,6 +6,11 @@ Live Server
 
 
 Como testar o projeto:
+nunjucks
+node.js
+SQLite = npm install sqlite-async
 
+
+------------(EM CONSTRUÇÃO)-------------
 
 
