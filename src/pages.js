@@ -77,23 +77,24 @@ async function saveClasses(req, res){
     try {
 
         const db = await Database
+        
         await createProffy(db, { proffyValue, classValue, classScheduleValues })
-    
-    
-        let queryString = "?subject=" + req.body.subject
-        queryString += "&weekday=" + req.body.weekday[0]
-        queryString += "&time=" + req.body.time_from[0]
 
-        // const { showModal, closeModal } = require('../public/scripts/showModal')
-        // let show = showModal
-        // show.showModal()
-
-        await setInterval(() => {
-            // let close = closeModal
-            // close.closeModal()
-            return res.redirect("/study" + queryString)
-        }, 2000);
       
+        setTimeout(() => {
+            let queryString = "?subject=" + req.body.subject
+            queryString += "&weekday=" + req.body.weekday[0]
+            queryString += "&time=" + req.body.time_from[0]
+    
+            // const { showModal, closeModal } = require('../public/scripts/showModal')
+            // let show = showModal
+            // show.showModal()
+    
+          
+                // let close = closeModal
+                // close.closeModal()
+                return res.redirect("/study" + queryString)
+        }, 2000);
          
     } catch (error) {
         console.log('erro:', error)
